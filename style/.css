@@ -1,0 +1,27 @@
+
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            background-color: black;
+            color: white;
+        }
+      
+
+header, footer {
+background-color: pink;
+color: navy;
+padding: 20px;
+text-align: center;
+}
+
+
+h1, h2 {
+color: #FF007F;
+}
+
+
+main {
+padding: 20px;
+}
+
