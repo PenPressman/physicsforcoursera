@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Color Match Game</title>
-  <link rel="stylesheet" href="styles/style.css">
-   
+<meta charset="UTF-8">
+  <title>Physics Notes</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Quick Clicks</h1>
-    <p style="font-size: 1em; color: hotpink; max-width: 400px; margin: 0 auto; line-height: 1.5;">Instructions:<br>Click the matching colored circles before they change!<br>Make sure to click the smaller number in each pair first.</p>
-    <div id="score">Score: 0</div>
-    <div id="game-board"></div>
+  <div class="container">
+    <h1>Overview</h1>
+    <p>Since making this is also my way of studying, I’m including the ways I’ve found it easiest to understand things. That being said, there’s no way around the fact that doing practice problems is the best way to make sure that you actually know the content and not just the formulas, so do as many as you can! However, if you’re tired before a test or something, feel free to just read these :) Also, random note: remember that distance and displacement are two different things! For example, if I walk 10 meters forward and then 10 meters back, if I wanted to find the distance I traveled, it would be 20 meters, but my displacement would be 0 meters. If I took a really curvy path to walk in a straight line forward, you could just use the straight version of the path to find displacement, but you would need to add up the length of the whole curvy path to find the distance. The place this will come up in this unit is speed vs velocity. Speed is distance over time, which will be the rate at which ground is traveled over (or flown through, swam through, etc.). Velocity is displacement over time, which will be the change in position over a given time. This will also make more sense when we talk about vectors, but it’s something to start thinking about.</p>
 
+    <h2>Relative Velocity</h2>
+    <p>I want to start with this because I think it's the most isolated concept from the rest of this unit, and once you get it… you get it. Basically, think of walking on one of those flat escalators or moving floor things at airports, whatever you want to call them. In terms of how long it takes you to move from one place in the airport to another, we can just measure the time it takes for you to move, say, 20 meters. So, let’s say that took 20 seconds, aka you are moving at 1m/s. When we think of it more specifically, that’s really how fast you are moving relative to the still ground of the airport. The measurement of how long it took you from here to there doesn’t tell you how fast you were walking, or how fast the flat escalator was moving. In order to determine either of those velocities, we need to compare all three frames to each other: you to the ground, you to the escalator, and the escalator to the ground. The formula for relative velocity analysis (click the formula button to see it) makes a lot of sense when you think about it – my speed in the airport is a combination of how fast I'm walking and how fast the escalator is moving me, hence the addition. I like to think of it as squashing the middle variable in between the other two. (The middle variable being the frame of reference that relates to both others, which in the example above would be the flat escalator.) The only thing to keep in mind, and the reason you should do some practice problems, is that these can get just a bit more complicated when you take components into account. Remember to calculate the velocities in the x and y (or theoretically z? I haven't seen any examples of that…) directions separately. Then you’ll be good to go!</p>
+
+    <h3>Vectors and Scalars</h3>
+    <p>Speaking of splitting up components, this is important in general for any vector quantities. Because vectors take into account direction in addition to magnitude, you need to remember to split things into x and y. Stuff like mass, electric potential, and energy are scalars, so having a negative sign before an amount of energy would probably mean there was a change in energy or something like that. For vectors, like velocity, a negative sign refers to the direction of the velocity. A quick trick to remember is that if the velocity and acceleration have the same sign, the object is speeding up. If they are opposites, it is slowing down. That's why having "negative acceleration" does NOT necessarily entail slowing down (which might be confusing to those thinking of acceleration colloquially). If you're given individual components for something like velocity (ex. v=(2x)i + (4x 2 )j m/s), and you're given a scenario in which to find acceleration or some other variable, it's probably easiest to keep everything in terms of individual components (this is called "unit vector notation"). However, if you need to find the magnitude of the vector, make sure to use the Pythagorean theorem (you can find it under the equations button), and then use SOHCAHTOA to find the angle. There will be a lot more to go over about vectors and scalars in later units, but for now, this is all you need. Oh and, if you want to add vectors in a different way (and for some reason you are given an example where this is easier), you can use the tip-to-tail method: draw the vectors by connecting each "tip" to the next one's "tail" and then find the final result. Remember, if one of them is negative, invert it before you add it (aka subtracting the vector).</p>
+
+    <h4>In short, vectors = the dreaded (or maybe fun for some people?) return of geometry.</h4>
+
+    <h5>Projectile Motion</h5>
+    <p>Aka, objects in the air, not touching anything or having any engines. The only specific condition you need to meet to use kinematics, the basic formulas for projectile motion, is having constant acceleration; meaning, no engine changing the object's velocity etc. In most cases, this will mean you have something being thrown/launched/dropped, and then (most likely neglecting air resistance), you'll evaluate the following motion of the object. In freefall, there will be no starting velocity (ie. v0=o). In all other cases, remember that the only acceleration you will probably have is acceleration due to gravity. I’m not going to spend a lot of time on this because the main thing is just to do some practice problems, but here are a few notes to keep in mind.</p>
+    <ul>
+      <li>Remember that acceleration due to gravity (aka “g”) is in the y direction only!</li>
+      <li>Remember that you can find the max height by finding where v y is 0, since that is where the velocity will change direction and the projectile will start heading back down.</li>
+      <li>Unit 2 will explain this more, but aside from gravity, if there is no force acting on a projectile (which there will not be), it must have no other acceleration besides g. The exception to this would be if you had a problem where the projectile also had some sort of engine causing constant acceleration I guess.</li>
+      <li>Since the kinematic equations are consistently effective at solving for your missing variables, start by writing down everything you know (i.e. make a chart of x and y variables) and then go from there!</li>
+    </ul>
+  </div>
 </body>
 </html>
